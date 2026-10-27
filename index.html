@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>EMMY HENZ BOT V6</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <div class="brandmark">EH<span>6</span></div>
+      <div><p class="eyebrow">WHATSAPP AUTOMATION</p><h1>EMMY HENZ <span>V6</span></h1></div>
+      <div class="live"><i id="led"></i><span id="connection">Checking</span></div>
+    </header>
+    <section class="hero">
+      <p class="eyebrow">CONTROL CENTER / 01</p>
+      <h2>Your bot.<br><span>Your rules.</span></h2>
+      <p class="sub">Connect WhatsApp, check your bot status, and manage your V6 setup from one place.</p>
+    </section>
+    <section class="stats">
+      <article class="card"><p>CONNECTION</p><strong id="statConnection">—</strong><small id="lastEvent">Waiting for status</small></article>
+      <article class="card"><p>COMMANDS HANDLED</p><strong id="handled">0</strong><small>Since this process started</small></article>
+      <article class="card"><p>VERSION</p><strong>6.0.0</strong><small>Starter build</small></article>
+    </section>
+    <section class="panel">
+      <div class="section-head"><div><p class="eyebrow">SETUP / 02</p><h3>Link your WhatsApp</h3></div><span class="step">PAIRING CODE</span></div>
+      <p class="sub">Enter your full phone number with country code. Example: Nigeria +234… Enter digits only, without the + sign.</p>
+      <form id="pairForm">
+        <label for="phone">WhatsApp phone number</label>
+        <div class="inputrow"><input id="phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="2348012345678" minlength="8" maxlength="15" required><button type="submit" id="pairBtn">Get code ↗</button></div>
+      </form>
+      <div id="notice" class="notice" role="status">Your pairing code will appear here when available.</div>
+      <div id="codeBox" class="codebox hidden"><p>ENTER THIS CODE IN WHATSAPP</p><strong id="pairCode">--------</strong><small>WhatsApp → Linked devices → Link a device → Link with phone number instead</small></div>
+    </section>
+    <section class="panel">
+      <div class="section-head"><div><p class="eyebrow">COMMANDS / 03</p><h3>Available now</h3></div></div>
+      <div class="commands"><div><code>.menu</code><span>Show command list</span></div><div><code>.ping</code><span>Check if bot is online</span></div><div><code>.info</code><span>Show bot information</span></div></div>
+    </section>
+    <footer><span>EMMY HENZ BOT V6</span><span>Keep your session private. Never share pairing codes.</span></footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
